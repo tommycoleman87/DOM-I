@@ -38,5 +38,52 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//NAV content
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let navA = document.querySelectorAll('a');
+
+
+navA[0].textContent = siteContent['nav']['nav-item-1'];
+navA[0].style.color = 'green';
+navA[1].textContent = siteContent['nav']['nav-item-2'];
+navA[1].style.color = 'green';
+navA[2].textContent = siteContent['nav']['nav-item-3'];
+navA[2].style.color = 'green';
+navA[3].textContent = siteContent['nav']['nav-item-4'];
+navA[3].style.color = 'green';
+navA[4].textContent = siteContent['nav']['nav-item-5'];
+navA[4].style.color = 'green';
+navA[5].textContent = siteContent['nav']['nav-item-6'];
+navA[5].style.color = 'green';
+//CTA content
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let cta = document.querySelector('.cta-text');
+
+ctaBtn = cta.querySelector('button');
+ctaBtn.textContent = siteContent['cta']['button'];
+
+ctaHeader = cta.querySelector('h1');
+ctaHeader.textContent = siteContent['cta']['h1'];
+//top content
+let topContent = document.querySelector('.top-content');
+
+let topHeaders = topContent.querySelectorAll('h4');
+let topPara = topContent.querySelectorAll('p');
+
+topHeaders[0].textContent = siteContent['main-content']['features-h4'];
+topPara[0].textContent = siteContent['main-content']['features-content'];
+
+topHeaders[1].textContent = siteContent['main-content']['about-h4'];
+topPara[1].textContent = siteContent['main-content']['about-content'];
+
+//Middle image
+let middleImg = document.querySelector('.middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
