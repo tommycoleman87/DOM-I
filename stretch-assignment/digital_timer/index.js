@@ -3,6 +3,7 @@ function timer() {
     let secondTens = document.querySelector('#secondTens');
     let msHundreds = document.querySelector('#msHundreds');
     let msTens = document.querySelector('#msTens');
+    
     var interval = setInterval(function(){
         switch(msTens.textContent === '-'){
             case true:
@@ -47,9 +48,11 @@ function timer() {
         }
     },10);
 
+
 interval();
 
 
 }
 
-timer();
+document.getElementById('btn').addEventListener('click', timer);
+
