@@ -59,16 +59,28 @@ navA[4].textContent = siteContent['nav']['nav-item-5'];
 navA[4].style.color = 'green';
 navA[5].textContent = siteContent['nav']['nav-item-6'];
 navA[5].style.color = 'green';
+
+let newLinkOne = document.createElement('a');
+newLinkOne.textContent = 'Social Media';
+newLinkOne.style.color = 'green';
+document.querySelector('nav').appendChild(newLinkOne);
+
+let newLinkTwo = document.createElement('a');
+newLinkTwo.textContent = 'Donate';
+newLinkTwo.style.color = 'green';
+document.querySelector('nav').prepend(newLinkTwo);
+
 //CTA content
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
-let cta = document.querySelector('.cta-text');
+let cta = document.querySelector('.cta');
 
 ctaBtn = cta.querySelector('button');
 ctaBtn.textContent = siteContent['cta']['button'];
 
 ctaHeader = cta.querySelector('h1');
+
 ctaHeader.textContent = siteContent['cta']['h1'];
 //top content
 let topContent = document.querySelector('.top-content');
