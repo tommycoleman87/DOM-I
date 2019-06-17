@@ -81,7 +81,7 @@ ctaBtn.textContent = siteContent['cta']['button'];
 
 ctaHeader = cta.querySelector('h1');
 
-ctaHeader.textContent = siteContent['cta']['h1'];
+ctaHeader.innerHTML = siteContent['cta']['h1'].split(' ').join('<br>');
 //top content
 let topContent = document.querySelector('.top-content');
 
