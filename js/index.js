@@ -86,4 +86,39 @@ topPara[1].textContent = siteContent['main-content']['about-content'];
 let middleImg = document.querySelector('.middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+//Bottom Content
+let btmContent = document.querySelector('.bottom-content');
+
+let btmHeaders = btmContent.querySelectorAll('h4');
+let btmPara = btmContent.querySelectorAll('p');
+
+btmHeaders[0].textContent = siteContent['main-content']['services-h4'];
+btmPara[0].textContent = siteContent['main-content']['services-content'];
+
+btmHeaders[1].textContent = siteContent['main-content']['product-h4'];
+btmPara[1].textContent = siteContent['main-content']['product-content'];
+
+btmHeaders[2].textContent = siteContent['main-content']['vision-h4'];
+btmPara[2].textContent = siteContent['main-content']['vision-content'];
+
+//Contact
+let contact = document.querySelector('.contact');
+
+let contactHeader = contact.querySelector('h4');
+let contactPara = contact.querySelectorAll('p');
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactPara[0].textContent = siteContent['contact']['address'];
+contactPara[1].textContent = siteContent['contact']['phone'];
+contactPara[2].textContent = siteContent['contact']['email'];
+
+//Footer
+let footer = document.querySelector('footer');
+let footerPara = footer.querySelector('p');
+
+footerPara.textContent = siteContent['footer']['copyright'];
+
+
+
+
 
