@@ -38,5 +38,99 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//NAV content
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let navA = document.querySelectorAll('a');
+
+
+navA[0].textContent = siteContent['nav']['nav-item-1'];
+navA[0].style.color = 'green';
+navA[1].textContent = siteContent['nav']['nav-item-2'];
+navA[1].style.color = 'green';
+navA[2].textContent = siteContent['nav']['nav-item-3'];
+navA[2].style.color = 'green';
+navA[3].textContent = siteContent['nav']['nav-item-4'];
+navA[3].style.color = 'green';
+navA[4].textContent = siteContent['nav']['nav-item-5'];
+navA[4].style.color = 'green';
+navA[5].textContent = siteContent['nav']['nav-item-6'];
+navA[5].style.color = 'green';
+
+let newLinkOne = document.createElement('a');
+newLinkOne.textContent = 'Social Media';
+newLinkOne.style.color = 'green';
+document.querySelector('nav').appendChild(newLinkOne);
+
+let newLinkTwo = document.createElement('a');
+newLinkTwo.textContent = 'Donate';
+newLinkTwo.style.color = 'green';
+document.querySelector('nav').prepend(newLinkTwo);
+
+//CTA content
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let cta = document.querySelector('.cta');
+
+ctaBtn = cta.querySelector('button');
+ctaBtn.textContent = siteContent['cta']['button'];
+
+ctaHeader = cta.querySelector('h1');
+
+ctaHeader.innerHTML = siteContent['cta']['h1'].split(' ').join('<br>');
+//top content
+let topContent = document.querySelector('.top-content');
+
+let topHeaders = topContent.querySelectorAll('h4');
+let topPara = topContent.querySelectorAll('p');
+
+topHeaders[0].textContent = siteContent['main-content']['features-h4'];
+topPara[0].textContent = siteContent['main-content']['features-content'];
+
+topHeaders[1].textContent = siteContent['main-content']['about-h4'];
+topPara[1].textContent = siteContent['main-content']['about-content'];
+
+//Middle image
+let middleImg = document.querySelector('.middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//Bottom Content
+let btmContent = document.querySelector('.bottom-content');
+
+let btmHeaders = btmContent.querySelectorAll('h4');
+let btmPara = btmContent.querySelectorAll('p');
+
+btmHeaders[0].textContent = siteContent['main-content']['services-h4'];
+btmPara[0].textContent = siteContent['main-content']['services-content'];
+
+btmHeaders[1].textContent = siteContent['main-content']['product-h4'];
+btmPara[1].textContent = siteContent['main-content']['product-content'];
+
+btmHeaders[2].textContent = siteContent['main-content']['vision-h4'];
+btmPara[2].textContent = siteContent['main-content']['vision-content'];
+
+//Contact
+let contact = document.querySelector('.contact');
+
+let contactHeader = contact.querySelector('h4');
+let contactPara = contact.querySelectorAll('p');
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactPara[0].textContent = siteContent['contact']['address'];
+contactPara[1].textContent = siteContent['contact']['phone'];
+contactPara[2].textContent = siteContent['contact']['email'];
+
+//Footer
+let footer = document.querySelector('footer');
+let footerPara = footer.querySelector('p');
+
+footerPara.textContent = siteContent['footer']['copyright'];
+
+
+
+
+
